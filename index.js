@@ -10,8 +10,10 @@ require('./helpers')
 //Puerto
 const port = process.env.PORT || 3000
 
+//Haciendo publicos archivos estaticos
 app.use(express.static(__dirname+ '/public'))
 
+//Renderizar las plantillas HBS con contenido HTML
 hbs.registerPartials(__dirname + '/views/parciales')
 
 //Express HBS
